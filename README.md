@@ -1,4 +1,3 @@
-```markdown
 # 🏥 Healthcare Care Authorization & Tracking Platform
 
 ## 1. Project Overview
@@ -372,5 +371,3 @@ This project demonstrates:
 Projet Web Services — EFREI Paris — Inge3 Bioinformatique
 Auteurs : Inès DUFLOS, Marion FRESQUET, Mathilde MEZENTZEFF
 
-```
-```
