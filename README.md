@@ -369,5 +369,6 @@ This project demonstrates:
 ## Crédits / Auteurs
 
 Projet Web Services — EFREI Paris — Inge3 Bioinformatique
+
 Auteurs : Inès DUFLOS, Marion FRESQUET, Mathilde MEZENTZEFF
 
