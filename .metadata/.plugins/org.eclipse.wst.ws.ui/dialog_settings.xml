@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="0/org.eclipse.jst.ws.wsImpl.java">
+		<item value="tps.ws.deployment.Computation"/>
+		<item value="tps.ws.deployment.Square"/>
+		<item value="tps.multi.ws.IdealWeightWS"/>
+		<item value="tps.multi.ws.ConverterWS"/>
+		<item value="tps.ws.deployment.PersonSortService"/>
+		<item value="tps.ws.deployment.PersonService"/>
+	</list>
+</section>

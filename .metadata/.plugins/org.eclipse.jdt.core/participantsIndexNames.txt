@@ -1,0 +1,19 @@
+INDEX VERSION 1.131
+/Users/inesduflos/Documents/ETUDES/EFREI/M2/Web_Services/eclipse-workspace-ws/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/320623398.index
+/MultiWS/src/main/java
+/Users/inesduflos/Documents/ETUDES/EFREI/M2/Web_Services/eclipse-workspace-ws/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4186374583.index
+/WS_HelloWorld/src/main/java
+/Users/inesduflos/Documents/ETUDES/EFREI/M2/Web_Services/eclipse-workspace-ws/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3029634244.index
+/MultiWS/src/main/java
+/Users/inesduflos/Documents/ETUDES/EFREI/M2/Web_Services/eclipse-workspace-ws/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2053058476.index
+/MultiWS/src/main/java
+/Users/inesduflos/Documents/ETUDES/EFREI/M2/Web_Services/eclipse-workspace-ws/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1913310880.index
+/HelloWorldClient/src/main/java
+/Users/inesduflos/Documents/ETUDES/EFREI/M2/Web_Services/eclipse-workspace-ws/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3979525768.index
+/WS_HelloWorld/src/main/java
+/Users/inesduflos/Documents/ETUDES/EFREI/M2/Web_Services/eclipse-workspace-ws/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2489376288.index
+/WS_HelloWorld/src/main/java
+/Users/inesduflos/Documents/ETUDES/EFREI/M2/Web_Services/eclipse-workspace-ws/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2570624654.index
+/HelloWorldClient/src/main/java
+/Users/inesduflos/Documents/ETUDES/EFREI/M2/Web_Services/eclipse-workspace-ws/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2260647053.index
+/HelloWorldClient/src/main/java

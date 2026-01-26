@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/Users/inesduflos/Documents/ETUDES/EFREI/M2/Web_Services/eclipse-workspace-project/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2257501772.index
+1460073704.index
+910539247.index
+1332251208.index
+489966181.index
+2131615051.index
+1823501567.index

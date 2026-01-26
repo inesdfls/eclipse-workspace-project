@@ -1,0 +1,5 @@
+package insurance.grpc;
+
+public class InsuranceClientTest {
+
+}

@@ -1,0 +1,68 @@
+package risk.graphql;
+
+import com.sun.net.httpserver.HttpServer;
+import java.io.*;
+import java.net.InetSocketAddress;
+
+public class GraphQLRiskServer {
+
+    public static void main(String[] args) throws Exception {
+
+        HttpServer server = HttpServer.create(new InetSocketAddress(8083), 0);
+
+        server.createContext("/graphql", exchange -> {
+            try {
+                if (!exchange.getRequestMethod().equalsIgnoreCase("POST")) {
+                    exchange.sendResponseHeaders(405, -1);
+                    return;
+                }
+
+                String body = readBody(exchange.getRequestBody());
+
+                String risk = "LOW";
+                double confidence = 0.8;
+
+                if (body.contains("cost: 1200") || body.contains("cost: 1500") || body.contains("cost: 2000")) {
+                    risk = "HIGH";
+                    confidence = 0.9;
+                } else if (body.contains("cost: 600") || body.contains("cost: 700") || body.contains("cost: 800")) {
+                    risk = "MEDIUM";
+                    confidence = 0.7;
+                }
+
+                String response = "{ \"data\": { \"scoreRisk\": { \"riskLevel\": \"" + risk
+                        + "\", \"confidence\": " + confidence + " } } }";
+
+                exchange.getResponseHeaders().add("Content-Type", "application/json; charset=UTF-8");
+                exchange.sendResponseHeaders(200, response.getBytes("UTF-8").length);
+
+                OutputStream os = exchange.getResponseBody();
+                os.write(response.getBytes("UTF-8"));
+                os.close();
+
+                System.out.println("[GRAPHQL REQUEST] " + body);
+                System.out.println("[GRAPHQL RESPONSE] " + response);
+
+            } catch (Exception e) {
+                e.printStackTrace();
+                try {
+                    exchange.sendResponseHeaders(500, -1);
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
+
+        server.start();
+        System.out.println("GraphQL Risk Service running on http://localhost:8083/graphql");
+    }
+
+    private static String readBody(InputStream is) throws Exception {
+        BufferedReader br = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+        StringBuilder sb = new StringBuilder();
+        String line;
+        while ((line = br.readLine()) != null) sb.append(line);
+        br.close();
+        return sb.toString();
+    }
+}

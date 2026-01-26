@@ -1,0 +1,19 @@
+package identity.soap;
+
+import javax.jws.WebMethod;
+import javax.jws.WebService;
+import javax.xml.ws.Endpoint;
+
+@WebService
+public class IdentityWebService {
+
+    @WebMethod
+    public boolean verifyIdentity(String nationalId) {
+        return nationalId != null && nationalId.startsWith("ID");
+    }
+
+    public static void main(String[] args) {
+        Endpoint.publish("http://localhost:8082/identity", new IdentityWebService());
+        System.out.println("SOAP Identity running: http://localhost:8082/identity?wsdl");
+    }
+}

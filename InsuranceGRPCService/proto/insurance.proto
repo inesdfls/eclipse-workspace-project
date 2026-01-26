@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "insurance.grpc";
+option java_outer_classname = "InsuranceProto";
+
+service InsuranceService {
+  rpc CheckCoverage(CoverageRequest) returns (CoverageResponse);
+}
+
+message CoverageRequest {
+  string insuranceId = 1;
+  string medicalAct = 2;
+  double estimatedCost = 3;
+}
+
+message CoverageResponse {
+  bool validPolicy = 1;
+  bool covered = 2;
+  string message = 3;
+}
