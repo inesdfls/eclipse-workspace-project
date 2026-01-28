@@ -289,7 +289,7 @@ InsuranceService
 grpcurl -plaintext \
   -import-path InsuranceGRPCService/proto \
   -proto insurance.proto \
-  -d '{"insuranceId":"INS-001","medicalAct":"MRI Scan","estimatedCost":500}' \
+  -d '{"insuranceId":"INS-001","medicalAct":"MRI_SCAN","estimatedCost":500}' \
   localhost:9090 InsuranceService/CheckCoverage
 ```
 
@@ -297,7 +297,9 @@ Response:
 
 ```json
 {
-  "covered": true
+  "validPolicy": true,
+  "covered": true,
+  "message": "Covered ✅"
 }
 ```
 

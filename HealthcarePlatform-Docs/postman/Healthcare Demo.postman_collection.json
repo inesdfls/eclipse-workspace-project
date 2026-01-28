@@ -14,7 +14,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"fullName\": \"Harry Styles\",\n  \"nationalId\": \"ID123456\",\n  \"insuranceId\": \"INS-001\",\n  \"medicalAct\": \"MRI Scan\",\n  \"estimatedCost\": 500,\n  \"justification\": \"medical report + prescription\"\n}",
+          "raw": "{\n  \"fullName\": \"Harry Styles\",\n  \"nationalId\": \"OK123456\",\n  \"insuranceId\": \"INS-001\",\n  \"medicalAct\": \"MRI Scan\",\n  \"estimatedCost\": 500,\n  \"justification\": \"medical report + prescription\"\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -43,7 +43,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/HealthcareOrchestrator/api/care-requests/REQ-40232b87",
+          "raw": "http://localhost:8080/HealthcareOrchestrator/api/care-requests/REQ-493cf1df",
           "protocol": "http",
           "host": [
             "localhost"
@@ -53,7 +53,7 @@
             "HealthcareOrchestrator",
             "api",
             "care-requests",
-            "REQ-40232b87"
+            "REQ-493cf1df"
           ]
         }
       },
@@ -65,7 +65,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:8080/HealthcareOrchestrator/api/care-requests/REQ-40232b87/history",
+          "raw": "http://localhost:8080/HealthcareOrchestrator/api/care-requests/REQ-493cf1df/history",
           "protocol": "http",
           "host": [
             "localhost"
@@ -75,7 +75,7 @@
             "HealthcareOrchestrator",
             "api",
             "care-requests",
-            "REQ-40232b87",
+            "REQ-493cf1df",
             "history"
           ]
         }
