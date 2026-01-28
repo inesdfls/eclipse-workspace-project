@@ -71,7 +71,7 @@ Services **must be started in the following order**:
 1. Identity SOAP Service  
 2. Insurance gRPC Service  
 3. Risk GraphQL Service  
-4. Notification Service (if standalone)  
+4. Notification Service (Tomcat)  
 5. Healthcare Orchestrator (Tomcat)  
 
 ---
