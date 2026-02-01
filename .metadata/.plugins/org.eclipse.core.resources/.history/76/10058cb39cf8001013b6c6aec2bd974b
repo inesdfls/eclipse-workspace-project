@@ -1,5 +1,0 @@
-package orchestrator.api;
-
-public class CareRequestResource {
-
-}

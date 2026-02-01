@@ -188,8 +188,8 @@ Content-Type: application/json
   "fullName": "Harry Styles",
   "nationalId": "OK12345",
   "insuranceId": "INS-001",
-  "medicalAct": "MRI Scan",
-  "estimatedCost": 500,
+  "medicalAct": "MRI_SCAN",
+  "cost": 500,
   "justification": "medical report + prescription"
 }
 ```
@@ -289,7 +289,7 @@ InsuranceService
 grpcurl -plaintext \
   -import-path InsuranceGRPCService/proto \
   -proto insurance.proto \
-  -d '{"insuranceId":"INS-001","medicalAct":"MRI_SCAN","estimatedCost":500}' \
+  -d '{"insuranceId":"INS-001","medicalAct":"MRI_SCAN","cost": 500}' \
   localhost:9090 InsuranceService/CheckCoverage
 ```
 
@@ -317,7 +317,7 @@ POST http://localhost:8083/graphql
 
 ```json
 {
-  "query": "query { scoreRisk(medicalAct:\"MRI Scan\", justification:\"medical report\", estimatedCost:500) { riskLevel confidence } }"
+  "query": "query { scoreRisk(medicalAct:\"MRI_SCAN\", justification:\"medical report\", cost: 500) { riskLevel confidence } }"
 }
 ```
 
@@ -350,9 +350,10 @@ Response:
 
 | Folder          | Content                                 |
 | --------------- | --------------------------------------- |
-| `postman/`      | Postman collections                     |
-| `soapui/`       | SoapUI project                          |
-| `docs/screens/` | Screenshots (REST, SOAP, gRPC, GraphQL) |
+| `Docs/postman/` | Postman collections                     |
+| `Docs/soapui/`  | SoapUI project                          |
+| `Docs/screens/` | Screenshots (REST, SOAP, gRPC, GraphQL) |
+| `Docs/`         | Présentation.pptx                       |
 
 ---
 
