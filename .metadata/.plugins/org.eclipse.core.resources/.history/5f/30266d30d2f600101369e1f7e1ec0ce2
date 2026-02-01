@@ -1,5 +1,0 @@
-package notification.api;
-
-public class NotifyResource {
-
-}

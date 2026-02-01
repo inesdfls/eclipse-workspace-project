@@ -1,0 +1,86 @@
+{
+  "info": {
+    "_postman_id": "01328436-50b8-4fae-81f0-d189ddd77250",
+    "name": "Healthcare Demo",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51837349",
+    "_collection_link": "https://go.postman.co/collection/51837349-01328436-50b8-4fae-81f0-d189ddd77250?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "http://localhost:8080/HealthcareOrchestrator/api/care-requests",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"fullName\": \"Harry Styles\",\n  \"nationalId\": \"OK123456\",\n  \"insuranceId\": \"INS-001\",\n  \"medicalAct\": \"MRI_SCAN\",\n  \"cost\": 500,\n  \"justification\": \"medical report + prescription\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/HealthcareOrchestrator/api/care-requests",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "HealthcareOrchestrator",
+            "api",
+            "care-requests"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:8080/HealthcareOrchestrator/api/care-requests/REQ-40232b87",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/HealthcareOrchestrator/api/care-requests/REQ-e6a9599f",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "HealthcareOrchestrator",
+            "api",
+            "care-requests",
+            "REQ-e6a9599f"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:8080/HealthcareOrchestrator/api/care-requests/REQ-40232b87/history",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/HealthcareOrchestrator/api/care-requests/REQ-e6a9599f/history",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "HealthcareOrchestrator",
+            "api",
+            "care-requests",
+            "REQ-e6a9599f",
+            "history"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
